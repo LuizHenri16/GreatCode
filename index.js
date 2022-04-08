@@ -13,7 +13,7 @@ let blurMobile = document.querySelector("#blur-mobile")
 
 window.onload = 
     document.body.onresize = function() {
-    if (document.body.clientWidth <= 868) {
+    if (document.body.clientWidth < 868) {
         logo.innerHTML = "<img src='assets/logo-mobile.svg' alt='rocketseatLogo'>"
         mainContentH1.innerHTML = '<h1 class="text-content">O café que fará seu <br>código decolar para<br>o próximo nível.</h1>'
         line.innerHTML = "<div class='line'></div>"
