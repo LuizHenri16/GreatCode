@@ -30,7 +30,6 @@ header {
 
 .container .list  {
     display: none;
-
 }
 
 .container .list li {
@@ -109,10 +108,8 @@ header {
 }
 
 .container.show .list li a{
-    
+    font-size: 1.5rem;
 }
-
-
 
 .button {
     background: transparent;
@@ -157,8 +154,8 @@ button {
 }
 
 button:focus {
-        outline-color: #8257E5;
-        outline-style: ridge;
+    outline-color: #8257E5;
+    outline-style: ridge;
 }
 
 #main-button {
@@ -171,8 +168,8 @@ button:focus {
 
 .coffee-image img {
     width: 100%;
-    margin-top: 10rem;
-
+    position: relative;
+    top: 16rem;
 }
 
 .great-text {
@@ -200,7 +197,7 @@ button:focus {
     left: -57px;
     top: 380px;
     
-    background: #996DFF;
+    background: #996dff6e;
     filter: blur(300px);
 }
 
@@ -229,7 +226,6 @@ button:focus {
     }
     .coffee-image img {
         width: 65rem;
-        margin-top: 16.5rem;
     }
 
     .button-open, .button-close {
@@ -242,6 +238,19 @@ button:focus {
 @media (min-width: 1000px) {
     .coffee-image img {
         width: 80rem;
-        margin-top: 16.5rem;
-}
+        
+    }
+
+    .blur-mobile {
+    position: absolute;
+    width: 700px;
+    height: 421px;
+    left:  500px;
+    top: 380px;
+    
+    background: #996dff4d;
+    filter: blur(7  00px);
+    }
+
+    
 }

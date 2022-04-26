@@ -14,6 +14,7 @@ let blurMobile = document.querySelector("#blur-mobile")
 window.onload = 
     document.body.onresize = function() {
     if (document.body.clientWidth < 868) {
+
         logo.innerHTML = "<img src='assets/logo-mobile.svg' alt='rocketseatLogo'>"
         mainContentH1.innerHTML = '<h1 class="text-content">O café que fará seu <br>código decolar para<br>o próximo nível.</h1>'
         line.innerHTML = "<div class='line'></div>"
@@ -22,7 +23,9 @@ window.onload =
         navButton.innerHTML = ""
 
         blurMobile.innerHTML = "<img src='assets/blur-mobile.png'>"
+
     } else {
+
         mainContentH1.innerHTML = ''
         logo.innerHTML = "<img src='assets/logo-desktop.svg' alt='rocketseatLogo'>"
         line.innerHTML = ""
@@ -34,11 +37,9 @@ window.onload =
 
         //Caso altere o tamanho da tela remove o show para evitar de aparecer de aparecer o buttonClose
         navigation.classList.remove("show")
-        
  
     }
 };
-
 
 mainButton.addEventListener("click", ()=> {
     window.open('https://www.rocketseat.com.br/', '_blank')
